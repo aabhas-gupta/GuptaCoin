@@ -4,7 +4,8 @@
   "description": "A web-based application in javascript for simulating cryptocurrency transactions with the help of blockchain",
   "main": "main.js",
   "dependencies": {
-    "crypto-js": "^4.1.1"
+    "crypto-js": "^4.1.1",
+    "elliptic": "^6.5.4"
   },
   "devDependencies": {},
   "scripts": {
