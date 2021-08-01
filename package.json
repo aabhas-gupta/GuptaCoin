@@ -1,7 +1,7 @@
 {
   "name": "guptacoin",
   "version": "1.0.0",
-  "description": "A web-based application in javascript for simluating cryptocurrency transactions with the help of blockchain",
+  "description": "A web-based application in javascript for simulating cryptocurrency transactions with the help of blockchain",
   "main": "main.js",
   "dependencies": {
     "crypto-js": "^4.1.1"
