@@ -71,6 +71,7 @@ class Blockchain{
         this.difficulty = 2;
         this.pendingTransactions = [];
         this.miningReward = 100;
+        this.gasFees = 10;
     }
 
     createGenesisBlock(){
@@ -82,7 +83,7 @@ class Blockchain{
     }
 
     minePendingTransactions(miningRewardAddress){
-        const rewardTx = new Transaction(null, miningRewardAddress, this.miningReward);
+        const rewardTx = new Transaction(null, miningRewardAddress, this.miningReward - this.gasFees);
         this.pendingTransactions.push(rewardTx);
 
         const block = new Block(Date.now(), this.pendingTransactions, this.getLatestBlock().hash);
